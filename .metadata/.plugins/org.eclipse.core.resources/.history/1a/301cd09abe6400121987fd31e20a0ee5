@@ -1,0 +1,66 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.alivecast.exorder"
+    android:versionCode="7"
+    android:versionName="1.1.2.5" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <supports-screens android:largeScreens="true"
+                  android:normalScreens="true"
+                  android:smallScreens="true"
+                  android:resizeable="true"
+                  android:anyDensity="true"
+/>
+<uses-permission android:name="android.permission.WAKE_LOCK" /><uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.FLASHLIGHT" />
+<uses-permission android:name="android.permission.VIBRATE" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" android:debuggable="false">
+        
+        <activity
+            android:name="exorder"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- ZXing activities -->
+        <activity android:name="com.google.zxing.client.android.CaptureActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.phonegap.plugins.barcodescanner.SCAN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.google.zxing.client.android.encode.EncodeActivity" android:label="@string/share_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.phonegap.plugins.barcodescanner.ENCODE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!-- /ZXing activities -->
+        
+    </application>
+
+</manifest>

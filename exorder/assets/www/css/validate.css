@@ -1,0 +1,26 @@
+/*
+.validate input{
+	position:relative;
+	z-index:2;
+}
+
+label{
+	position:relative;
+	padding:5px 5px 5px 25px;
+	margin : 0 5px 0 -25px;
+	margin-left:-25px;
+	position:relative;
+	z-index:1;
+}
+*/
+.error input ,
+.error textarea {
+	background:#FFCCCC;
+}
+
+p.error{
+	margin:0;
+	color:red;
+	font-weight:bold;
+	margin-bottom:1em;
+}

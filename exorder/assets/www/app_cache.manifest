@@ -1,0 +1,35 @@
+CACHE MANIFEST
+
+FALLBACK:
+
+NETWORK:
+addressee_index.html
+addressee_new.html
+barcode.html
+cancel.html
+card_new.html
+card_show.html
+contact_order.html
+contact.html
+index.html
+netError.html
+order.html
+ordering_new.html
+passcode_new.html
+passcode_edit.html
+passcode_hint.html
+passcode_input.html
+repeat.html
+report.html
+setting.html
+show_item.html
+show_order.html
+show_order_item.html
+show_qrcode.html
+website_all.html
+website_scd.html
+website_soryo.html
+website.html
+
+# Additional resources to cache
+CACHE:
