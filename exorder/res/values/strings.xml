@@ -1,7 +1,0 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-
-    <string name="app_name">ExOrder</string>
-    <string name="menu_settings">Settings</string>
-    <string name="title_activity_main" tools:ignore="MissingTranslation">ExOrder</string>
-
-</resources>
